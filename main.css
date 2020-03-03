@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Spartan";
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 /* Scroll Bar */
 html {
