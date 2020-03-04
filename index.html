@@ -9,17 +9,16 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="#">Go Home</a>
+      <a class="home" href="#">Go Home</a>
       <ul>
         <li class="login">Login</li>
         <li>Sign Up</li>
       </ul>
     </nav>
-    <!-- onclick="hamburgerAnimation(this) -->
-    <div class="hamburger" onclick="hide(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+    <div class="hamburger">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
     </div>
     <div class="container">
       <div class="title-subtitle">
@@ -28,6 +27,9 @@
       </div>
       <object class="svg" type="image/svg+xml" data="./imgs/astroboy.svg">
       </object>
+    </div>
+    <div class="sun-area">
+      <img class="sun " id="imageID" src="./imgs/sun.svg" alt="dark mode" />
     </div>
     <script src="main.js"></script>
   </body>

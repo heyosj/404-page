@@ -1,0 +1,4 @@
+1. click the sun, background and link colors change
+    so does the hamburger menu
+
+2. when we click the moon, it goes back to normal

@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   font-family: "Spartan";
-  overflow-x: hidden;
 }
 /* Scroll Bar */
 html {
@@ -42,7 +41,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
-.navbar a {
+.home {
   text-decoration: none;
   color: black;
 }
@@ -85,6 +84,29 @@ body::-webkit-scrollbar-thumb {
   animation: floating 5s infinite ease-in-out;
 }
 
+.sun-area {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.sun {
+  height: 50px;
+  width: 50px;
+}
+
+.sun:hover {
+  cursor: pointer;
+}
+
+.moon {
+  background: #333;
+  color: white;
+}
+
+.bar-white {
+  background: white;
+}
+
 /* animation */
 @keyframes floating {
   0% {
@@ -113,9 +135,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 900px) {
-  .navbar,
-  .hidden {
+  .navbar {
     visibility: hidden;
+    margin-top: 5%;
   }
 
   .hamburger {
@@ -123,7 +145,8 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: flex-end;
     cursor: pointer;
-    margin-top: -5%;
+    margin-top: -6%;
+    visibility: visible;
   }
 
   .bar1,
@@ -134,6 +157,10 @@ body::-webkit-scrollbar-thumb {
     background: #333;
     margin: 6px 25px;
     transition: 0.4s;
+  }
+
+  .active {
+    visibility: visible;
   }
 
   .change .bar1 {
