@@ -6,18 +6,18 @@ const homeButton = document.querySelector(".home");
 const bars = document.querySelectorAll(".bar");
 const imageID = document.getElementById("imageID");
 
-function initiateDarkMode() {
+const initiateDarkMode = () => {
   body.classList.toggle("moon");
   homeButton.style.color = "white";
   bars.forEach(bar => (bar.style.backgroundColor = "white"));
   imageID.src = "./imgs/moon.svg";
-}
+};
 
-function initiateLightMode() {
+const initiateLightMode = () => {
   imageID.src = "./imgs/sun.svg";
   homeButton.style.color = "black";
   bars.forEach(bar => (bar.style.backgroundColor = "black"));
-}
+};
 
 sun.addEventListener("click", () => {
   initiateDarkMode();

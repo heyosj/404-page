@@ -68,6 +68,10 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 5%;
 }
 
+.error {
+  font-size: 5rem;
+}
+
 .title {
   font-size: 3rem;
   letter-spacing: 5px;
@@ -79,8 +83,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .svg {
-  width: 650px;
-  height: 650px;
+  width: 550px;
+  height: 540px;
   animation: floating 5s infinite ease-in-out;
 }
 
@@ -193,6 +197,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .svg {
-    margin-top: -10%;
+    height: 300px;
+    margin-top: -8.5%;
   }
 }
